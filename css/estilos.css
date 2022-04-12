@@ -1,0 +1,96 @@
+body{
+    background-image:url(https://st.depositphotos.com/2011255/1939/i/950/depositphotos_19393893-stock-photo-green-grass-background.jpg);
+    font-family: 'Indie Flower', cursive;
+}
+.contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    /*fila respeta ancho*/
+    font-weight: bold;
+    text-align: center;
+}
+
+/* esta notación dice:" A todos los elementos 
+dentro del contenedor hacer..." */
+
+.contenedor>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+a:visited,a,a:hover{
+    color: rgb(255, 255, 255)
+  }
+.carrusel{
+    font-family: 'Inconsolata', monospace;
+}
+h1{
+   text-align: center; 
+}
+.contenido{
+    font-family: 'Inconsolata', monospace;
+    font-size: x-large;
+    border: solid 10px rgba(184, 183, 183, 0.849);
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color:rgba(255, 255, 255, 0.742);
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:15px;
+}
+#melffy{border:solid rgba(184, 183, 183, 0.849); 5px;
+
+}
+h3{
+    color: rgb(255, 255, 255);
+}
+.pie{
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 200px;
+    padding-left:20px;
+}
+.footer__li{
+    font-size:x-large;
+    color:white;
+}
+.media{
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(255, 255, 255);
+}
+h5{
+    font-size: x-large;
+}
+p{
+    font-size: large;
+}
+.precio{
+    text-align: center;
+    font-size: x-large;
+    color:rgb(35, 206, 35);
+}
+.precio__responsive{
+    display: none;
+}
+
+@media (max-width:1000px){
+    .desc{
+        display:none;
+    }
+    .precio__responsive{
+        display:none;
+    }
+    
+}
+
+@media (max-width:550px){
+    .desc{
+        display:none;
+    }
+    h5{
+        display:none;
+    }
+    .precio{
+        display:none;
+    }
+
+}
